@@ -62,9 +62,9 @@ private extension AppDelegate {
             ddkLogInfo("event: \(event.rawValue), info: \(String(describing: info))")
         }
     }
-    
+
     func goYawWithAngularVelocity(_ velocity: Double) {
-        guard velocity < 100 && velocity > 0 else {
+        guard velocity <= 100 && velocity >= 0 else {
             return
         }
         
@@ -74,12 +74,40 @@ private extension AppDelegate {
             timelineElements.append(action)
         }
         
-        if let error = DJISDKManager.missionControl()?.scheduleElements(timelineElements) {
-            ddkLogError("Schedule element error: \(error.localizedDescription)")
+        self.beginTimelineWithElements(timelineElements)
+    }
+    
+    func goPanoramaWithAngularVelocity(_ velocity: Double) {
+        guard velocity <= 100 && velocity >= 0 else {
             return
         }
         
-        ddkLogInfo("Scheduled \(timelineElements.count) elements")
+        var timelineElements = [DJIMissionControlTimelineElement]()
+        
+        let appendYawAndCaptureElements = {
+            for _ in 0..<8 {
+                timelineElements.append(DJIAircraftYawAction(relativeAngle: 45, andAngularVelocity: velocity)!)
+                timelineElements.append(DJIShootPhotoAction(singleShootPhoto: ())!)
+            }
+        }
+        
+        timelineElements.append(DJIGimbalAttitudeAction(attitude: DJIGimbalAttitude(pitch: 0, roll: 0, yaw: 0))!)
+        appendYawAndCaptureElements()
+        timelineElements.append(DJIGimbalAttitudeAction(attitude: DJIGimbalAttitude(pitch: -30, roll: 0, yaw: 0))!)
+        appendYawAndCaptureElements()
+        timelineElements.append(DJIGimbalAttitudeAction(attitude: DJIGimbalAttitude(pitch: -60, roll: 0, yaw: 0))!)
+        appendYawAndCaptureElements()
+        timelineElements.append(DJIGimbalAttitudeAction(attitude: DJIGimbalAttitude(pitch: -90, roll: 0, yaw: 0))!)
+        timelineElements.append(DJIShootPhotoAction(singleShootPhoto: ())!)
+        
+        self.beginTimelineWithElements(timelineElements)
+    }
+    
+    func beginTimelineWithElements(_ elements: [DJIMissionControlTimelineElement]) {
+        if let error = DJISDKManager.missionControl()?.scheduleElements(elements) {
+            ddkLogError("Schedule element error: \(error.localizedDescription)")
+            return
+        }
         
         DJISDKManager.missionControl()?.addListener(self, toTimelineProgressWith: { (event, element, error, info) in
             self.handleTimeLineEvent(event, element: element, error: error, info: info)
@@ -91,26 +119,43 @@ private extension AppDelegate {
 
 extension AppDelegate: DDKStartViewControllerDelegate {
     func startViewControllerDidClickGoButton(_ viewCon: DDKStartViewController) {
-        let actionSheet = UIAlertController(title: "Select an action", message: nil, preferredStyle: .actionSheet)
-        actionSheet.addAction(UIAlertAction(title: "Go yaw with angular velocity", style: .default, handler: { (action) in
+        let showTextInputAlert = { (callback: @escaping (String) -> Void) in
             let alert = UIAlertController(title: "Set angular velocity", message: "within range [0, 100]", preferredStyle: .alert)
             alert.addTextField(configurationHandler: nil)
             alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
-                guard let str = alert.textFields![0].text, let velocity = Double(str) else {
+                callback(alert.textFields![0].text ?? "")
+            }))
+            self.startViewCon.present(alert, animated: true, completion: nil)
+        }
+        
+        let actionSheet = UIAlertController(title: "Select an action", message: nil, preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Go yaw with angular velocity", style: .default, handler: { (action) in
+            showTextInputAlert({ (text) in
+                guard let velocity = Double(text) else {
                     return
                 }
-                
                 self.goYawWithAngularVelocity(velocity)
-            }))
-            actionSheet.dismiss(animated: true, completion: nil)
-            self.startViewCon.present(alert, animated: true, completion: nil)
+            })
         }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Go panorama with angular velocity", style: .default, handler: { (action) in
+            showTextInputAlert({ (text) in
+                guard let velocity = Double(text) else {
+                    return
+                }
+                self.goPanoramaWithAngularVelocity(velocity)
+            })
+        }))
+        
         actionSheet.addAction(UIAlertAction(title: "Stop and unschedule", style: .default, handler: { (action) in
             DJISDKManager.missionControl()?.stopTimeline()
             DJISDKManager.missionControl()?.unscheduleEverything()
         }))
+        
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        
         self.startViewCon.present(actionSheet, animated: true, completion: nil)
     }
 }
