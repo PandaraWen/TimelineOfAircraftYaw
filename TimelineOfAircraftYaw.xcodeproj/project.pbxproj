@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9851FD981F9E0C0F0093A1A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9851FD971F9E0C0F0093A1A1 /* AppDelegate.swift */; };
+		9851FD9F1F9E0C0F0093A1A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9851FD9E1F9E0C0F0093A1A1 /* Assets.xcassets */; };
+		9851FDA21F9E0C0F0093A1A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9851FDA01F9E0C0F0093A1A1 /* LaunchScreen.storyboard */; };
+		ACD8C24B6C7E32A52542593A /* Pods_TimelineOfAircraftYaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B46561382AE9FE60710DD0 /* Pods_TimelineOfAircraftYaw.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		923C779B03D7E70174ABDF0F /* Pods-TimelineOfAircraftYaw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimelineOfAircraftYaw.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimelineOfAircraftYaw/Pods-TimelineOfAircraftYaw.release.xcconfig"; sourceTree = "<group>"; };
+		9851FD941F9E0C0F0093A1A1 /* TimelineOfAircraftYaw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimelineOfAircraftYaw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9851FD971F9E0C0F0093A1A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9851FD9E1F9E0C0F0093A1A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9851FDA11F9E0C0F0093A1A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9851FDA31F9E0C0F0093A1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF14F040FFBE7F8B6F92299B /* Pods-TimelineOfAircraftYaw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimelineOfAircraftYaw.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimelineOfAircraftYaw/Pods-TimelineOfAircraftYaw.debug.xcconfig"; sourceTree = "<group>"; };
+		F7B46561382AE9FE60710DD0 /* Pods_TimelineOfAircraftYaw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimelineOfAircraftYaw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9851FD911F9E0C0F0093A1A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD8C24B6C7E32A52542593A /* Pods_TimelineOfAircraftYaw.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		764A8DCEA365FF9252C9E915 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7B46561382AE9FE60710DD0 /* Pods_TimelineOfAircraftYaw.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95E62A2A59B9C25C1B1A184E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF14F040FFBE7F8B6F92299B /* Pods-TimelineOfAircraftYaw.debug.xcconfig */,
+				923C779B03D7E70174ABDF0F /* Pods-TimelineOfAircraftYaw.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9851FD8B1F9E0C0F0093A1A1 = {
+			isa = PBXGroup;
+			children = (
+				9851FD961F9E0C0F0093A1A1 /* TimelineOfAircraftYaw */,
+				9851FD951F9E0C0F0093A1A1 /* Products */,
+				95E62A2A59B9C25C1B1A184E /* Pods */,
+				764A8DCEA365FF9252C9E915 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9851FD951F9E0C0F0093A1A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9851FD941F9E0C0F0093A1A1 /* TimelineOfAircraftYaw.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9851FD961F9E0C0F0093A1A1 /* TimelineOfAircraftYaw */ = {
+			isa = PBXGroup;
+			children = (
+				9851FD971F9E0C0F0093A1A1 /* AppDelegate.swift */,
+				9851FD9E1F9E0C0F0093A1A1 /* Assets.xcassets */,
+				9851FDA01F9E0C0F0093A1A1 /* LaunchScreen.storyboard */,
+				9851FDA31F9E0C0F0093A1A1 /* Info.plist */,
+			);
+			path = TimelineOfAircraftYaw;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9851FD931F9E0C0F0093A1A1 /* TimelineOfAircraftYaw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9851FDA61F9E0C0F0093A1A1 /* Build configuration list for PBXNativeTarget "TimelineOfAircraftYaw" */;
+			buildPhases = (
+				B1AC8D2A6AB23636FBEA2C23 /* [CP] Check Pods Manifest.lock */,
+				9851FD901F9E0C0F0093A1A1 /* Sources */,
+				9851FD911F9E0C0F0093A1A1 /* Frameworks */,
+				9851FD921F9E0C0F0093A1A1 /* Resources */,
+				A53E5988360B9DABB531E05C /* [CP] Embed Pods Frameworks */,
+				FDA611B05256F9393284844C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimelineOfAircraftYaw;
+			productName = TimelineOfAircraftYaw;
+			productReference = 9851FD941F9E0C0F0093A1A1 /* TimelineOfAircraftYaw.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9851FD8C1F9E0C0F0093A1A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Pandara;
+				TargetAttributes = {
+					9851FD931F9E0C0F0093A1A1 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9851FD8F1F9E0C0F0093A1A1 /* Build configuration list for PBXProject "TimelineOfAircraftYaw" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9851FD8B1F9E0C0F0093A1A1;
+			productRefGroup = 9851FD951F9E0C0F0093A1A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9851FD931F9E0C0F0093A1A1 /* TimelineOfAircraftYaw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9851FD921F9E0C0F0093A1A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9851FDA21F9E0C0F0093A1A1 /* LaunchScreen.storyboard in Resources */,
+				9851FD9F1F9E0C0F0093A1A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A53E5988360B9DABB531E05C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TimelineOfAircraftYaw/Pods-TimelineOfAircraftYaw-frameworks.sh",
+				"${PODS_ROOT}/DJI-SDK-iOS/iOS_Mobile_SDK/DJISDK.framework",
+				"${BUILT_PRODUCTS_DIR}/DJIDemoKit/DJIDemoKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJISDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJIDemoKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimelineOfAircraftYaw/Pods-TimelineOfAircraftYaw-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1AC8D2A6AB23636FBEA2C23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimelineOfAircraftYaw-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDA611B05256F9393284844C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimelineOfAircraftYaw/Pods-TimelineOfAircraftYaw-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9851FD901F9E0C0F0093A1A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9851FD981F9E0C0F0093A1A1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9851FDA01F9E0C0F0093A1A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9851FDA11F9E0C0F0093A1A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9851FDA41F9E0C0F0093A1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9851FDA51F9E0C0F0093A1A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9851FDA71F9E0C0F0093A1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF14F040FFBE7F8B6F92299B /* Pods-TimelineOfAircraftYaw.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M333L7769B;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TimelineOfAircraftYaw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiwiinc.TimelineOfAircraftYaw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9851FDA81F9E0C0F0093A1A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923C779B03D7E70174ABDF0F /* Pods-TimelineOfAircraftYaw.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M333L7769B;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TimelineOfAircraftYaw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiwiinc.TimelineOfAircraftYaw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9851FD8F1F9E0C0F0093A1A1 /* Build configuration list for PBXProject "TimelineOfAircraftYaw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9851FDA41F9E0C0F0093A1A1 /* Debug */,
+				9851FDA51F9E0C0F0093A1A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9851FDA61F9E0C0F0093A1A1 /* Build configuration list for PBXNativeTarget "TimelineOfAircraftYaw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9851FDA71F9E0C0F0093A1A1 /* Debug */,
+				9851FDA81F9E0C0F0093A1A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9851FD8C1F9E0C0F0093A1A1 /* Project object */;
+}
