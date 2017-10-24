@@ -1,5 +1,5 @@
 # TimelineOfAircraftYaw
-This demo is created to describe an issue of `DJITimelineMission`.
+This demo is created to describe an [issue](https://github.com/dji-sdk/Mobile-SDK-iOS/issues/184) of `DJITimelineMission`.
 
 ![image](./_readme_resource/main.jpg)
 
